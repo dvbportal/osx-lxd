@@ -1,4 +1,4 @@
-// +build linux
+// +build darwin
 // +build cgo
 
 package shared
@@ -37,7 +37,7 @@ import (
 #include <stdlib.h>
 #include <sys/types.h>
 #include <grp.h>
-#include <pty.h>
+#include <util.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <string.h>
@@ -115,7 +115,7 @@ void create_pty(int *master, int *slave, int uid, int gid) {
 void create_pipe(int *master, int *slave) {
 	int pipefd[2];
 
-	if (pipe2(pipefd, O_CLOEXEC) < 0) {
+	if (pipe(pipefd) < 0) {
 		printf("Failed to create a pipe: %s\n", strerror(errno));
 		return;
 	}

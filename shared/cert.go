@@ -37,9 +37,9 @@ func mynames() ([]string, error) {
 	}
 
 	for _, iface := range ifs {
-		if IsBridge(&iface) || IsLoopback(&iface) {
-			continue
-		}
+	//	if IsBridge(&iface) || IsLoopback(&iface) {
+	//		continue
+	//	}
 
 		addrs, err := iface.Addrs()
 		if err != nil {

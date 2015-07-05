@@ -218,8 +218,9 @@ func (m IdmapSet) ShiftFromNs(uid int, gid int) (int, int) {
 }
 
 func GetOwner(path string) (int, int, error) {
-	uid, gid, _, _, _, _, err := GetFileStat(path)
-	return uid, gid, err
+	// uid, gid, _, _, _, _, err := GetFileStat(path)
+	// return uid, gid, err
+    return 0,0,nil
 }
 
 func (set *IdmapSet) doUidshiftIntoContainer(dir string, testmode bool, how string) error {
@@ -252,9 +253,9 @@ func (set *IdmapSet) doUidshiftIntoContainer(dir string, testmode bool, how stri
 		return nil
 	}
 
-	if !PathExists(dir) {
-		return fmt.Errorf("No such file or directory: %q", dir)
-	}
+	//if !PathExists(dir) {
+	//	return fmt.Errorf("No such file or directory: %q", dir)
+	//}
 	return filepath.Walk(dir, convert)
 }
 
