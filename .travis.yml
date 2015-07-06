@@ -8,7 +8,6 @@ os: osx
 #   http://blog.travis-ci.com/2014-05-13-multi-os-feature-available/
 language: objective-c
 
-# TODO: support building/testing with both golang and gccgo?
 go:
   - 1.4
 
