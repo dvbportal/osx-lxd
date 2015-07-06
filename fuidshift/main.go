@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lxc/lxd/shared"
+	"github.com/dvbportal/osx-lxd/shared"
 )
 
 func help(me string, status int) {

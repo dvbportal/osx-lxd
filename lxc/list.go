@@ -9,8 +9,8 @@ import (
 	"github.com/chai2010/gettext-go/gettext"
 	"github.com/olekukonko/tablewriter"
 
-	"github.com/lxc/lxd"
-	"github.com/lxc/lxd/shared"
+	"github.com/dvbportal/osx-lxd"
+	"github.com/dvbportal/osx-lxd/shared"
 )
 
 type ByName [][]string

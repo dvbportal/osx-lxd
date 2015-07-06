@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/lxc/lxd/internal/gnuflag"
+	. "github.com/dvbportal/osx-lxd/internal/gnuflag"
 )
 
 var (

@@ -17,8 +17,8 @@ sudo apt-get -y install lxc lxc-dev mercurial git pkg-config \
     touch uid_gid_setup
 
 
-go get github.com/lxc/lxd
-cd $GOPATH/src/github.com/lxc/lxd
+go get github.com/dvbportal/osx-lxd
+cd $GOPATH/src/github.com/dvbportal/osx-lxd
 go get -v -d ./...
 make
 

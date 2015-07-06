@@ -34,8 +34,8 @@ dist:
 	rm -Rf lxd-$(VERSION) $(ARCHIVE) $(ARCHIVE).gz
 	mkdir -p lxd-$(VERSION)/dist
 	GOPATH=$(shell pwd)/lxd-$(VERSION)/dist go get -d -v ./...
-	rm -rf $(shell pwd)/lxd-$(VERSION)/dist/src/github.com/lxc/lxd
-	ln -s ../../../.. ./lxd-$(VERSION)/dist/src/github.com/lxc/lxd
+	rm -rf $(shell pwd)/lxd-$(VERSION)/dist/src/github.com/dvbportal/osx-lxd
+	ln -s ../../../.. ./lxd-$(VERSION)/dist/src/github.com/dvbportal/osx-lxd
 	git archive --prefix=lxd-$(VERSION)/ --output=$(ARCHIVE) HEAD
 	tar -uf $(ARCHIVE) --exclude-vcs lxd-$(VERSION)/
 	gzip -9 $(ARCHIVE)

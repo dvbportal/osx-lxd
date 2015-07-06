@@ -6,8 +6,8 @@ import (
 
 	"github.com/gosexy/gettext"
 
-	"github.com/lxc/lxd"
-	"github.com/lxc/lxd/internal/gnuflag"
+	"github.com/dvbportal/osx-lxd"
+	"github.com/dvbportal/osx-lxd/internal/gnuflag"
 )
 
 type publishCmd struct{}

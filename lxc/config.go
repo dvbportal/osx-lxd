@@ -12,8 +12,8 @@ import (
 	"golang.org/x/crypto/ssh/terminal"
 	"gopkg.in/yaml.v2"
 
-	"github.com/lxc/lxd"
-	"github.com/lxc/lxd/shared"
+	"github.com/dvbportal/osx-lxd"
+	"github.com/dvbportal/osx-lxd/shared"
 )
 
 type configCmd struct {

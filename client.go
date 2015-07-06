@@ -25,7 +25,7 @@ import (
 	"github.com/gorilla/websocket"
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/lxc/lxd/shared"
+	"github.com/dvbportal/osx-lxd/shared"
 )
 
 // Client can talk to a LXD daemon.

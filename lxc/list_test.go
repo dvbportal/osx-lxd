@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/lxc/lxd/shared"
+	"github.com/dvbportal/osx-lxd/shared"
 )
 
 func TestDotPrefixMatch(t *testing.T) {

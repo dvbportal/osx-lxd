@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/chai2010/gettext-go/gettext"
 
-	"github.com/lxc/lxd"
+	"github.com/dvbportal/osx-lxd"
 )
 
 type fingerCmd struct {

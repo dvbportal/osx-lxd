@@ -5,7 +5,7 @@ test_commits_signed_off() {
     return
   fi
 
-  git remote add lxc https://github.com/lxc/lxd
+  git remote add lxc https://github.com/dvbportal/osx-lxd
   git fetch lxc master
   for i in $(git cherry lxc/master | grep '^+' | cut -d' ' -f2); do
     git show "$i" | grep -q 'Signed-off-by' || \

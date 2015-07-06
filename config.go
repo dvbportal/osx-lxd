@@ -10,7 +10,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/lxc/lxd/shared"
+	"github.com/dvbportal/osx-lxd/shared"
 )
 
 // Config holds settings to be used by a client or daemon.

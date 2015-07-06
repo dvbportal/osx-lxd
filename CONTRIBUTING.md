@@ -1,7 +1,7 @@
 # Pull requests:
 
 Changes to this project should be proposed as pull requests on Github
-at: https://github.com/lxc/lxd
+at: https://github.com/dvbportal/osx-lxd
 
 Proposed changes will then go through code review there and once acked,
 be merged in the main branch.
