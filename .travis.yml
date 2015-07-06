@@ -21,6 +21,8 @@ before_install:
   - brew link gettext --force
 
 install:
+  - mkdir ~/go
+  - export GOPATH=~/go
   - go get -v github.com/dvbportal/osx-lxd
   - cd $GOPATH/src/github.com/dvbportal/osx-lxd/lxd
   - go get -v -d ./...
