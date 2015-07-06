@@ -24,7 +24,7 @@ install:
   - mkdir ~/go
   - export GOPATH=~/go
   - go get -v github.com/dvbportal/osx-lxd
-  - cd $GOPATH/src/github.com/dvbportal/osx-lxd/lxd
+  - cd $GOPATH/src/github.com/dvbportal/osx-lxd/lxc
   - go get -v -d ./...
 
 script: "sudo -E env PATH=$PATH make check"
