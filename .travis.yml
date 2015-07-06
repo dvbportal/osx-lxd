@@ -1,5 +1,7 @@
 language: go
 
+os: osx
+
 # TODO: support building/testing with both golang and gccgo?
 go:
   - 1.4
