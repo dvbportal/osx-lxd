@@ -17,7 +17,7 @@ matrix:
 
 before_install:
   - brew update
-  - brew outdated gettext || brew upgrade gettext
+  - brew install gettext
   - brew link gettext --force
 
 install:
