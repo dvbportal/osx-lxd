@@ -29,5 +29,8 @@ script:
   - cd $GOPATH/src/github.com/dvbportal/osx-lxd/lxc
   - go get -v -d ./...
 
+notifications:
+  slack: cloudno-de:MwH0d4mlewDz5QJ6gBYtmRye
+  
 after_success:
   #- make send-coverage
