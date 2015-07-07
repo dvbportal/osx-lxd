@@ -23,8 +23,11 @@ install:
   - mkdir ~/go
   - export GOPATH=~/go
   - go get -v github.com/dvbportal/osx-lxd
+
+
+script:
   - cd $GOPATH/src/github.com/dvbportal/osx-lxd/lxc
   - go get -v -d ./...
 
-script:
-notifications:
+after_success:
+  #- make send-coverage
