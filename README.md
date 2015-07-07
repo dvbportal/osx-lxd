@@ -1,4 +1,4 @@
-# osx-lxd [![Build Status][travis-status]][travis-link][![GitHub Version][github-version]][github-link][![license][license]][license-link]
+# osx-lxd [![Build Status][travis-status]][travis-link] [![GitHub Version][github-version]][github-link] [![license][license]][license-link]
 OS X LXC / LXD client
 
 [travis-status]: https://travis-ci.org/dvbportal/osx-lxd.svg
